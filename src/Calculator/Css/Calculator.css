@@ -7,11 +7,29 @@
   justify-content: space-between;
   width: 100%;
   border-radius: 30px;
-  padding: 90px 15px 25px 15px;
+  padding: 90px 25px 25px 25px;
+  text-align: right;
+}
+.calculator_main_nightMode{
+  background-color: #243441;
+  max-width: 390px;
+  box-shadow: 0 0 20px 18px #e79563;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 30px;
+  padding: 90px 25px 25px 25px;
   text-align: right;
 }
 .view_current {
   color: #24323e;
+  user-select: none;
+  font-size: 62px;
+  word-wrap: break-word;
+}
+.view_current_nightMode{
+  color: #fff;
   user-select: none;
   font-size: 62px;
   word-wrap: break-word;
@@ -37,26 +55,16 @@
   font-weight: 500;
   border: none;
   border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.1s;
   &:active{
     background-color: #d8d6d6;
   }
 }
-.div__1,
-.div__2,
-.div__3,
-.div__4 {
-  display: flex;
-  justify-content: center;
-  column-gap: 23px;
-}
-.div_5 {
-    display: flex;
-    justify-content: center;
-    column-gap: 35px;
-}
-.tools_number1 {
-  background-color: #ed802e;
-  width: 140px;
+
+.tools_number_nightMode{
+  background-color: #243441;
+  width: 70px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 10px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   height: 70px;
@@ -65,7 +73,52 @@
   font-weight: 500;
   border: none;
   border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.1s;
+  &:active{
+    background-color: #d8d6d6;
+  }
+}
+
+.div__1,
+.div__2,
+.div__3,
+.div__4 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.div_5 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.tools_number1 {
+  background-color: #ed802e;
+  width: 160px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 10px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  height: 70px;
+  color: #a4a6a7;
+  font-size: 21px;
+  font-weight: 500;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
   &:active{
     background-color: #cf6718;
   }
+}
+
+.gold_font{
+  color: #cf6718;
+}
+
+.night_mode_btn{
+  background-color: transparent;
+  display: flex;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
 }
